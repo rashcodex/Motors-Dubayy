@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap-5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!--  Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <!-- Font type -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <!-- Style.css -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <title>Motores City</title>
+</head>
+
+<body>
+  <div class="wrapper about-us">
+    <!-- START HEADER -->
+    <header id="header">
+      <div class="container-fluid">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light p-0 gap-3 gap-xl-5">
+          <!-- LOGO -->
+          <a class="navbar-brand me-0 order-1 order-lg-0" href="./index.html">
+            <img class="w-100" src="../assets/img/header-logo.svg" alt="MotoresCity-logo">
+          </a>
+          <!-- Menu Toggler Button -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+          </button>
+          <!-- Nav items -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0  gap-xl-4 pt-lg-0">
+              <li class="nav-item d-lg-none">
+                <!-- LOGO -->
+                <a class="nav-link navbar-brand justify-content-center" href="./index.html">
+                  <img class="w-100" src="../assets/img/header-logo.svg" alt="MotoresCity-logo">
+                </a>
+              </li>
+              <li class="nav-item d-lg-none">
+                <div class="nav-link info d-block">
+                  <h5 class="mb-0">Welcome, <span class="full-name">Mohamed Rashad</span></h5>
+                  <span class="email">mz@gmail.com</span>
+                </div>
+              </li>
+              <div class="top-btns d-flex justify-content-between w-100 gap-2 flex-wrap d-lg-none">
+                <a href="../en/my-orders.html">
+                  <i class="bi bi-cart"></i>
+                  My Orders
+                </a>
+                <a href="../en/my-orders.html">
+                  <i class="bi bi-heart"></i>
+                  Favorite
+                </a>
+                <a href="../en/my-orders.html" class="justify-content-center text-center flex-grow-1">
+                  <i class="bi bi-journal-text"></i>
+                  Finance Requests
+                </a>
+              </div>
+              <li class="nav-item">
+                <a class="nav-link active" href="../en/search-result.html">
+                  <i class="bi bi-search d-lg-none"></i> Cars for sale
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <i class="bi bi-bank d-lg-none"></i>
+                  Finance
+                  <i class="bi bi-chevron-down d-lg-none ms-auto"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="../en/finance-form.html">a. Request for finance</a></li>
+                  <li><a class="dropdown-item" href="../en/payment-calculator.html">b. Finance Calculator</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="bi bi-question-circle d-lg-none"></i>
+                  Why MotorsCity?
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../en/contact-us.html">
+                  <i class="bi bi-chat-square-dots d-lg-none"></i>
+                  Contact Us
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="bi bi-journals d-lg-none"></i>
+                  Recources
+                </a>
+              </li>
+              <div class="radio-group d-flex gap-3 align-items-center d-lg-none">
+                <div class="form-check d-flex gap-2 ps-0">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    EN
+                  </label>
+                </div>
+                <div class="form-check d-flex gap-2">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    AR
+                  </label>
+                </div>
+              </div>
+              <div class="navbar_menu-btns d-flex flex-wrap gap-4 mt-auto d-lg-none">
+                <button class="btn tel">
+                  <a href="tel:+01064136500">
+                    <i class="bi bi-telephone"></i>
+                    01064136500
+                  </a>
+                </button>
+                <!-- Show only if the user have signed in -->
+                <button class="btn btn-primary">
+                  <a href="#">Log Out</a>
+                </button>
+                <button class="btn btn-primary d-none">
+                  <a href="#">Log In</a>
+                </button>
+                <button class="btn btn-secondary d-none">
+                  <span class="bg">
+                    <a href="#">Sign Up</a>
+                  </span>
+                </button>
+              </div>
+              <!-- <span class="navbar_close-icon d-lg-none">
+                  <i class="bi bi-x-lg"></i>
+                </span> -->
+            </ul>
+          </div>
+          <!-- User info -->
+          <div class="right-nav d-flex align-items-center gap-3 order-2 order-lg-0">
+            <!-- VISIBLE IF USER HAVE SIGNED UP -->
+            <div class="dropdown">
+              <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <span class="user">
+                  <i class="bi bi-person"></i>
+                </span>
+                <span class="d-none d-lg-inline-block ms-2">Profile</span>
+              </a>
+              <ul class="dropdown-menu profile" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item head gap-3" href="#">
+                    <div class="dropdown-head_title">
+                      <h6 class="full-name mb-0">Mohamed Rashad</h6>
+                      <span class="email">example@gmail.com</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./my-orders.html">
+                    <span class="icon"><i class="bi bi-cart2"></i></span> My Orders
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./favorite-cars.html">
+                    <span class="icon"><i class="bi bi-heart"></i></span>
+                    Favorite Cars
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <span class="icon"><i class="bi bi-bank"></i></span>
+                    Finance Requests
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <span class="icon"><i class="bi bi-bookmark"></i></span>
+                    Saved Searches
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./my-profile.html">
+                    <span class="icon"><i class="bi bi-person"></i></span>
+                    My Profile
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item logout" href="#">
+                    <span class="icon"><i class="bi bi-box-arrow-left"></i></span>
+                    Log Out
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- IF USER HAVEN'T SIGN UP -->
+            <div class="dropdown d-none">
+              <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <span class="user">
+                  <i class="bi bi-person"></i>
+                </span>
+                <span class="d-none d-lg-inline-block ms-2">Log in</span>
+              </a>
+              <ul class="dropdown-menu login" aria-labelledby="navbarDropdown">
+                <li class="dropdown-item head gap-3 flex-column">
+                  <a class="nav-link login" href="#">Log in</a>
+                  <span class="register">Don’t have an account? <a class="nav-link" href="#">Register</a></span>
+                </li>
+                <li>
+                  <a class="dropdown-item" disabled>
+                    <span class="icon"><i class="bi bi-cart2"></i></span> My Orders
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./favorite-cars.html">
+                    <span class="icon"><i class="bi bi-heart"></i></span>
+                    Favorite Cars
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" disabled>
+                    <span class="icon"><i class="bi bi-bank"></i></span>
+                    Finance
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" disabled>
+                    <span class="icon"><i class="bi bi-bookmark"></i></span>
+                    Saved Searches
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" disabled>
+                    <span class="icon"><i class="bi bi-person"></i></span>
+                    My Profile
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <a class="favorite" href="./favorite-cars.html">
+              <span class="icon"><i class="bi bi-heart"></i></span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- START HOME -->
+    <section id="home">
+      <div class="container-fluid container-xl">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-6 col-xxl-6 order-1 order-lg-0">
+            <div class="home-content text-center text-lg-start gap-1 gap-lg-3">
+              <div class="logo-pattern d-none d-lg-block">
+                <img src="../assets/img/logo-pattern-3.svg" alt="logo-pattern">
+              </div>
+              <span class="title">who we are</span>
+              <h1>
+                We are making car shopping <br class="d-none d-xl-block"> easier, faster, and safer
+              </h1>
+              <p>People are at the center of everything we do at MotorsCity. Our main priority is to offer our customers the most
+                convenient
+                experience in finding their next car.</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 col-xxl-6 mb-5 mb-lg-0">
+            <div class="home-img">
+              <img class="w-100" src="../assets/img/about-us.jpg" alt="about-us">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END HOME -->
+
+    <!-- START Features -->
+    <section class="features text-center">
+      <div class="container-fluid container-xl">
+        <h3 class="mb-3">Our Mission</h3>
+        <p>
+          To create the most trusted vehicle ownership ecosystem powered by technology and data</p>
+        <div class="row">
+          <div class=" col-12 col-lg mt-5">
+            <div class="features-content">
+              <ul class="list-unstyled row text-start d-flex justify-content-between">
+                <div class="col-12 col-md-6 col-lg mb-4 mb-lg-0">
+                  <li>
+                    <img class="mb-4" src="../assets/img/icons/check-circle.svg" alt="Online-quote">
+                    <div>
+                      <h5 class="mb-4">Convenience</h5>
+                      <p>Shop and buy online, then get your car delivered to your door.</p>
+                    </div>
+                  </li>
+                </div>
+                <div class="col-12 col-md-6 col-lg mb-4 mb-lg-0">
+                  <li>
+                    <img class="mb-4" src="../assets/img/icons/check-circle.svg" alt="Online-quote">
+                    <div>
+                      <h5 class="mb-4">More Choices</h5>
+                      <p>Search thousands of new, used and certified pre-owned cars.</p>
+                    </div>
+                  </li>
+                </div>
+                <div class="col-12 col-md-6 col-lg mb-4 mb-lg-0">
+                  <li>
+                    <img class="mb-4" src="../assets/img/icons/check-circle.svg" alt="Online-quote">
+                    <div>
+                      <h5 class="mb-4">Price Transparency</h5>
+                      <p>Shop with confidence. No hidden fees, just clear, up-front prices.</p>
+                    </div>
+                  </li>
+                </div>
+                <div class="col-12 col-md-6 col-lg">
+                  <li>
+                    <img class="mb-4" src="../assets/img/icons/check-circle.svg" alt="Online-quote">
+                    <div>
+                      <h5 class="mb-4">Quality Assured</h5>
+                      <p>We carefully inspect each used car before the purchase.</p>
+                    </div>
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Features -->
+
+    <!-- START Features -->
+    <section class="features values text-center">
+      <div class="container-fluid container-xl">
+        <div class="head">
+          <h3 class="mb-3">Our Values</h3>
+          <p>MotorsCity was born to make the purchase of used and new cars <br class="d-none d-sm-block"> simple, transparent and
+            pleasant.</p>
+        </div>
+        <div class="row">
+          <div class=" col-12 col-lg mt-5">
+            <div class="features-content">
+              <ul class="list-unstyled row text-start d-flex justify-content-between">
+                <div class="col-12 col-md-6 col-lg mb-4 mb-lg-0">
+                  <li>
+                    <div class="icon mb-3">
+                      <i class="bi bi-droplet-fill"></i>
+                    </div>
+                    <div>
+                      <h5 class="mb-3">Transparent</h5>
+                      <p>We strive to be fully transparent in everything we do.</p>
+                    </div>
+                  </li>
+                </div>
+                <div class="col-12 col-md-6 col-lg mb-4 mb-lg-0">
+                  <li>
+                    <div class="icon mb-3">
+                      <i class="bi bi-heart-fill"></i>
+                    </div>
+                    <div>
+                      <h5 class="mb-3">Innovates</h5>
+                      <p>Innovation is the cornerstone of our business</p>
+                    </div>
+                  </li>
+                </div>
+                <div class="col-12 col-md-6 col-lg mb-4 mb-lg-0">
+                  <li>
+                    <div class="icon mb-3">
+                      <i class="bi bi-stars"></i>
+                    </div>
+                    <div>
+                      <h5 class="mb-3">Humbles</h5>
+                      <p>We know our strengths and weaknesses</p>
+                    </div>
+                  </li>
+                </div>
+                <div class="col-12 col-md-6 col-lg">
+                  <li>
+                    <div class="icon mb-3">
+                      <i class="bi bi-stars"></i>
+                    </div>
+                    <div>
+                      <h5 class="mb-3">Dreamers</h5>
+                      <p>We dream big and think big</p>
+                    </div>
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Features -->
+
+    <!-- FAQ -->
+    <div class="FAQ">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <h3 class="mb-4">Frequently asked questions</h3>
+            <p>If you can’t find what you’re looking for, you can contact us here, we will be happy to answer any of your
+              questions.</p>
+          </div>
+        </div>
+        <div class="faq_content mt-5">
+          <div class=" accordion" id="accordionExample">
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                      aria-expanded="true" aria-controls="collapseOne">
+                      What is MotorsCity?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                    <div class="accordion-body">
+                      <strong>Motors City</strong> is an online platform that acts as an intermediary between the user and the
+                      dealer. It is free, and allows you to have a
+                      simple, comfortable, economical and transparent car buying experience.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Is MotorsCity a dealership?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                    <div class="accordion-body">
+                      <strong>Motors City</strong> does not sell cars or components, nor does it offer technical service. We offer
+                      an information platform and act as an
+                      intermediary between the dealership and you.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Does it cost anything to use MotorsCity?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                    <div class="accordion-body">
+                      <strong>Motors City</strong> is free of charge for its clients. The consultation of offers is free and
+                      unlimited, and the purchase through Motors City does not
+                      imply commissions or surcharges in the final price.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                      How does MotorsCity choose its dealers?
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+                    <div class="accordion-body">
+                      We only work with official dealerships that offer an outstanding shopping experience.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FAQ -->
+
+    <!-- START FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="footer-top">
+          <div class="row gap-xl-5">
+            <div class="col-12 col-xl-2 mb-5 mb-xl-0">
+              <div class="footer-logo text-center">
+                <img src="../assets/img/logo-pattern.png" alt="LOGO">
+              </div>
+            </div>
+            <div class="col-12 col-lg">
+              <div class="footer-nav d-flex flex-column flex-lg-row justify-content-between align-items-start px-5 px-lg-0">
+                <ul class="location mb-3 mb-lg-0">
+                  <li>
+                    <a href="#" class="d-flex gap-3">
+                      <i class="bi bi-geo-alt"></i>
+                      <span>12039 Smith Avenue <br> Santa Fe Springs, CA 90670</span>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="contact">
+                  <li class="mb-3">
+                    <a href="#" class="d-flex gap-3">
+                      <i class="bi bi-telephone"></i>
+                      <span>Toll-free 0877 338 0999 </span>
+                    </a>
+                  </li>
+                  <li class="mb-3">
+                    <a href="#" class="d-flex gap-3">
+                      <i class="bi bi-telephone"></i>
+                      <span>Fax 562 236 9429</span>
+                    </a>
+                  </li>
+                  <li class="mb-5 mb-lg-0">
+                    <a href="#" class="d-flex gap-3">
+                      <i class="bi bi-envelope"></i>
+                      <span>Info@motorscity.com</span>
+                    </a>
+                  </li>
+                </ul>
+                <div class="sign-up text-center text-md-start">
+                  <h6 class="mb-4">Join our Email Club </h6>
+                  <form>
+                    <input required pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" type="email" name="signup" id="signup"
+                      placeholder="Email.." class="form-control mb-4">
+                    <button class="btn btn-secondary">
+                      <span class="bg">
+                        <span class="text">Sign Up</span>
+                      </span>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright d-flex flex-column flex-lg-row align-items-center justify-content-between">
+          <p class="mb-0 order-2 mt-4 order-lg-0 mt-lg-0"> © 2024 Copyright. All rights reserved. Made By RashadCodex</p>
+          <ul class="social-icons d-flex align-items-center gap-4">
+            <li>
+              <a href="#">
+                <i class="bi bi-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bi bi-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+  </div>
+
+
+  <!-- Bootstrap-5 Js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <!-- Jquery 3.6 min -->
+  <script src="../assets/plugins/js/jquery-3.6-min.js"></script>
+  <!-- Custom Js -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1468 @@
+<!doctype html>
+<html lang="en" dir="rtl">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap-5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--  Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!-- Bootstrap Input Slider -->
+    <link rel="stylesheet" href="../assets/plugins/bootstrap-slider/bootstrap-slider-min.css">
+    <!-- Font type -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FANCYBOX -->
+    <link rel="stylesheet" href="../assets/plugins/fancybox/css/fancybox.css">
+    <!-- Swiper Slider -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <!-- Swiper Slider js -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Style.css -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>موتورزسيتي</title>
+  </head>
+  <body>
+    <div class="wrapper" id="car-details">
+
+      <!-- START HEADER -->
+      <header id="header">
+        <div class="container-fluid">
+          <!-- navbar -->
+          <nav class="navbar navbar-expand-lg navbar-light p-0 gap-3 gap-xl-5">
+            <!-- LOGO -->
+            <a class="navbar-brand me-0 order-1 order-lg-0" href="./index.html">
+              <img class="w-100" src="../assets/img/header-logo.svg" alt="MotoresCity-logo">
+            </a>
+            <!-- Menu Toggler Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="top"></span>
+              <span class="middle"></span>
+              <span class="bottom"></span>
+            </button>
+            <!-- Nav items -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0  gap-xl-4 pt-lg-0">
+                <li class="nav-item d-lg-none">
+                  <!-- LOGO -->
+                  <a class="nav-link navbar-brand justify-content-center m-0" href="./index.html">
+                    <img class="w-100" src="../assets/img/header-logo.svg" alt="MotoresCity-logo">
+                  </a>
+                </li>
+                <li class="nav-item d-lg-none">
+                  <div class="nav-link d-block">
+                    <h5 class="mb-0">أهلا, <span class="full-name">محمد زين</span></h5>
+                  <span class="email">mz@gmail.com</span></div>
+                </li>
+                <div class="top-btns d-flex justify-content-between w-100 gap-2 flex-wrap d-lg-none">
+                  <a href="../en/my-orders.html">
+                    <i class="bi bi-cart"></i>
+                    طلباتي
+                  </a>
+                  <a href="../en/my-orders.html">
+                    <i class="bi bi-heart"></i>
+                    المفضلة
+                  </a>
+                  <a href="../en/my-orders.html" class="justify-content-center text-center flex-grow-1">
+                    <i class="bi bi-journal-text"></i>
+                    طلبات التمويل
+                  </a>
+                </div>
+                <li class="nav-item">
+                  <a class="nav-link active" href="../ar/search-result.html">
+                    <i class="bi bi-search d-lg-none"></i> سيارات للبيع
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-bank d-lg-none"></i> 
+                    التمويل
+                    <i class="bi bi-chevron-down d-lg-none me-auto"></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="../en/finance-form.html">1. طلب تمويل</a></li>
+                    <li><a class="dropdown-item" href="../en/payment-calculator.html"> 2. حاسبة التمويل</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../ar/why-motorscity.html">
+                    <i class="bi bi-question-circle d-lg-none"></i>ليش موتروزسيتي؟
+                  </a>
+                <li class="nav-item">
+                  <a class="nav-link" href="../ar/news.html">
+                    <i class="bi bi-journals d-lg-none"></i> المصادر
+                  </a>
+                </li>
+                <div class="radio-group d-flex gap-3 align-items-center d-lg-none">
+                  <div class="form-check d-flex gap-2 ps-0">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      إنجليزي
+                    </label>
+                  </div>
+                  <div class="form-check d-flex gap-2">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      عربي
+                    </label>
+                  </div>
+                </div>
+                <div class="navbar_menu-btns d-flex flex-wrap gap-4 mt-auto d-lg-none">
+                  <button class="btn tel">
+                    <a href="tel:+01064136500">
+                      <i class="bi bi-telephone"></i>
+                      01064136500
+                    </a>
+                  </button>
+                  <button class="btn btn-primary">
+                    <a href="#">تسجيل دخول</a>
+                  </button>
+                  <button class="btn btn-secondary">
+                    <span class="bg">
+                      <a href="#">إنشاء حساب</a>
+                    </span>
+                  </button>
+                </div>
+                <!-- <span class="navbar_close-icon d-lg-none">
+                  <i class="bi bi-x-lg"></i>
+                </span> -->
+              </ul>
+            </div>
+            <!-- User info -->
+            <div class="right-nav d-flex align-items-center gap-3 order-2 order-lg-0">
+              <!-- VISIBLE IF USER HAVE SIGNED UP -->
+              <div class="dropdown">
+                <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="user">
+                    <i class="bi bi-person"></i>
+                  </span>
+                  <span class="d-none d-lg-inline-block ms-2"> هلا, محمد</span>
+                </a>
+                <ul class="dropdown-menu profile" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item head gap-3"  href="#">
+                      <div class="dropdown-head_title">
+                        <h6 class="full-name mb-0">محمد زين</h6>
+                        <span class="email">example@gmail.com</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./my-orders.html">
+                      <span class="icon"><i class="bi bi-cart2"></i></span> طلباتي
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./favorite-cars.html">
+                      <span class="icon"><i class="bi bi-heart"></i></span>
+                      السيارات المفضلة
+                    </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <span class="icon"><i class="bi bi-bank"></i></span>
+                    التمويل
+                  </a>
+                  </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <span class="icon"><i class="bi bi-bookmark"></i></span>
+                    المحفوظات
+                  </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./my-profile.html">
+                      <span class="icon"><i class="bi bi-person"></i></span>
+                      الملف الشخصي
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item logout" href="#">
+                      <span class="icon"><i class="bi bi-box-arrow-left"></i></span>
+                      تجسيل خروج
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- IF USER HAVEN'T SIGN UP -->
+              <div class="dropdown d-none">
+                <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="user">
+                    <i class="bi bi-person"></i>
+                  </span>
+                  <span class="d-none d-lg-inline-block ms-2">تسجيل دخول</span>
+                </a>
+                <ul class="dropdown-menu login" aria-labelledby="navbarDropdown">
+                  <li class="dropdown-item head gap-3 flex-column">
+                    <a class="nav-link login" href="#">نسجيل دخول</a>
+                    <span class="register">لا تمتلك حساب ؟ <a class="nav-link" href="#">سجل الآن</a></span>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" disabled>
+                      <span class="icon"><i class="bi bi-cart2"></i></span> طلباتي
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./favorite-cars.html">
+                      <span class="icon"><i class="bi bi-heart"></i></span>
+                      السيارات المفضلة
+                    </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" disabled>
+                    <span class="icon"><i class="bi bi-bank"></i></span>
+                    التمويل
+                  </a>
+                  </li>
+                <li>
+                  <a class="dropdown-item" disabled>
+                    <span class="icon"><i class="bi bi-bookmark"></i></span>
+                    المحفوظات
+                  </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" disabled>
+                      <span class="icon"><i class="bi bi-person"></i></span>
+                      الملف الشخصي
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <a class="favorite" href="./favorite-cars.html">
+                <span class="icon"><i class="bi bi-heart"></i></span>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- END HEADER -->
+
+      <!-- CAR HERO SECTION -->
+      <section id="hero">
+        <div class="container-fluid container-xl">
+          <a href="../en/search-result.html" class="back-btn d-inline-block pt-3 pb-4">
+            <span class="d-flex">
+              <i class="bi bi-chevron-left"></i>
+              العودة الي صفحه البحث
+            </span>
+          </a>
+          <div class="row">
+            <div class="col-12 col-lg-7">
+              <div id="cart-carousel" class="swiper mySwiper carousel">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="car-img"
+                      data-src="../assets/img/cars/toyota-raize.webp" 
+                      data-fancybox="gallery"
+                      data-caption="Lorem ipsum dolorus augue. Morbi quis ipsum quis velit.">
+                      <img class="card-img-top" src="../assets/img/cars/toyota-raize.webp"  />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="car-img"
+                      data-src="../assets/img/cars/toyota-raize-2.webp" 
+                      data-fancybox="gallery"
+                      data-caption="Lorem ipsum dolorus augue. Morbi quis ipsum quis velit.">
+                      <img class="card-img-top" src="../assets/img/cars/toyota-raize-2.webp"  />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="car-img"
+                      data-src="../assets/img/cars/toyota-raize-3.webp" 
+                      data-fancybox="gallery"
+                      data-caption="Lorem ipsum dolorus augue. Morbi quis ipsum quis velit.">
+                      <img class="card-img-top" src="../assets/img/cars/toyota-raize-3.webp"  />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="car-img"
+                      data-src="../assets/img/cars/toyota-raize-4.webp" 
+                      data-fancybox="gallery"
+                      data-caption="Lorem ipsum dolorus augue. Morbi quis ipsum quis velit.">
+                      <img class="card-img-top" src="../assets/img/cars/toyota-raize-4.webp"  />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="car-img"
+                      data-src="../assets/img/cars/toyota-raize-5.webp" 
+                      data-fancybox="gallery"
+                      data-caption="Lorem ipsum dolorus augue. Morbi quis ipsum quis velit.">
+                      <img class="card-img-top" src="../assets/img/cars/toyota-raize-5.webp"  />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="car-img"
+                      data-src="../assets/img/cars/toyota-raize-6.webp" 
+                      data-fancybox="gallery"
+                      data-caption="Lorem ipsum dolorus augue. Morbi quis ipsum quis velit.">
+                      <img class="card-img-top" src="../assets/img/cars/toyota-raize-6.webp"  />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+              <!-- CONTROL BUTTONS -->
+              <div class="slider-control-buttons d-flex align-items-center justify-content-between gap-2 mt-4">
+                <a href="#" id="gallary" class="slider-btn" data-fancybox-trigger="gallery" >
+                  <img src="../assets/img/icons/gallary.svg" alt="gallary">
+                  <span>Gallary (25)</span>
+                </a>
+                <a href="#" id="gallary" class="slider-btn">
+                  <img src="../assets/img/icons/gallary.svg" alt="gallary">
+                  <span>External 360˚</span>
+                </a>
+                <a href="#" id="gallary" class="slider-btn">
+                  <img src="../assets/img/icons/gallary.svg" alt="gallary">
+                  <span>Internal 360˚</span>
+                </a>
+                <a href="#" id="gallary" class="slider-btn d-none d-lg-block">
+                  <img src="../assets/img/icons/gallary.svg" alt="gallary">
+                  <span>Imperfection</span>
+                </a>
+              </div>
+              <!-- ThumbSlider -->
+              <div thumbsSlider="" class="swiper thumbs-swiper thumbs my-4 mb-lg-0">
+                <div class="swiper-wrapper row flex-nowrap " style="height: 100px;">
+                  <div class="swiper-slide col h-100" num="one">
+                    <img class="h-100 " src="../assets/img/cars/toyota-raize.webp"  />
+                  </div>
+                  <div class="swiper-slide col" num="two">
+                    <img class="h-100 " src="../assets/img/cars/toyota-raize-2.webp"  />
+                  </div>
+                  <div class="swiper-slide col" num="three">
+                    <img class="h-100" src="../assets/img/cars/toyota-raize-3.webp"  />
+                  </div>
+                  <div class="swiper-slide col" num="four">
+                    <img class="h-100" src="../assets/img/cars/toyota-raize-4.webp"  />
+                  </div>
+                  <div class="swiper-slide col" num="five">
+                    <img class="h-100" src="../assets/img/cars/toyota-raize-5.webp"  />
+                  </div>
+                  <div class="swiper-slide col" num="six">
+                    <img class="h-100 " src="../assets/img/cars/toyota-raize-6.webp"  />
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-5">
+              <div class="info">
+                <div class="model d-flex gap-2">
+                  <span class="year">2022</span>
+                </div>
+                <h3 class="d-flex align-items-center gap-4 mb-3">تويوتا RAV4 XLE</h3>
+                <ul class="overview d-flex align-items-center gap-4 mb-3">
+                  <li class="d-flex items-center gap-2">
+                    <img src="../assets/img/icons/speed.svg" alt="speed">
+                    <span>10,182 كلم</span>
+                  </li>
+                  <li class="d-flex items-center gap-2">
+                    <img src="../assets/img/icons/petrol.svg" alt="petrol">
+                    <span>بنزين</span>
+                  </li>
+                  <li class="d-flex items-center gap-2">
+                    <img src="../assets/img/icons/manual.svg" alt="manual">
+                    <span>يدوي</span>
+                  </li>
+                </ul>
+                <div class="prices d-flex align-items-center pb-3 justify-content-between">
+                  <div class="total d-flex align-items-center gap-3 pe-2 flex-grow-1">
+                    <span>37,995﷼</span>
+                    <!-- <div class="dropdown">
+                      <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Price Details 
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Recommened</a></li>
+                        <li><a class="dropdown-item" href="#">Low to high</a></li>
+                        <li><a class="dropdown-item" href="#">High to low</a></li>
+                      </ul>
+                    </div> -->
+                  </div>
+                  <div class="monthly flex-grow-1">
+                    <div class="dropdown">
+                      <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        653﷼<Sub>/بالشهر</Sub>
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">رابط</a></li>
+                        <li><a class="dropdown-item" href="#">رابط</a></li>
+                        <li><a class="dropdown-item" href="#">رابط</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <ul class="features mt-3">
+                  <li class="d-flex align-items-center gap-3">
+                    <img src="../assets/img/icons/home.svg" alt="home">
+                    <span>إختبار السيارة بالمنزل: <span class="green">متاح</span> </span>
+                  </li>
+                  <li class="d-flex align-items-center gap-3">
+                    <img src="../assets/img/icons/certification.svg" alt="certification">
+                    <span>تأكيد الملكية السابقة</span>
+                  </li>
+                  <li class="d-flex align-items-center gap-3">
+                    <img src="../assets/img/icons/key.svg" alt="key">
+                    <span>مالك واحد</span>
+                  </li>
+                </ul>
+                <!-- <div class="return d-flex align-items-center justify-content-center gap-3 mt-3">
+                  <img src="../assets/img/icons/dollar.svg" alt="dollar">
+                  <span>7-Day Love It or Return It</span>
+                </div> -->
+                <div class="btn-group d-flex py-4 gap-3 gap-xl-4 justify-content-sm-center">
+                  <a href="#" class="flex-grow-1 flex-sm-grow-0">
+                    <button type="button" class="btn btn-primary d-flex flex-column gap-0 align-items-center">
+                      <span>إحجز الآن</span>
+                      <span class="tiny">100% قابلة للاسترداد</span>
+                    </button>
+                  </a>
+                  <a href="#" class="flex-grow-1 flex-sm-grow-0">
+                    <button type="button" class="btn btn-secondary">
+                      <span class="bg">
+                        <span class="text">إتصل بنا</span>
+                      </span>
+                    </button>
+                  </a>
+                </div>
+                
+                <div class="social-links d-flex align-items-center justify-content-between pt-4 flex-wrap gap-4">
+                  <div class="d-flex align-items-center gap-3">
+                    <span>مشاركة:</span>
+                  <ul class="d-flex align-items-center gap-4">
+                    <li>
+                      <a href="#">
+                        <img src="../assets/img/icons/facebook.svg" alt="facebook">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="../assets/img/icons/instagram.svg" alt="instagram">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="../assets/img/icons/twitter.svg" alt="twitter">
+                      </a>
+                    </li>
+                  </ul>
+                  </div>
+                  <div class="how-it-works"><a href="#">كيفية العمل <i class="bi bi-chevron-right"></i></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3 class="text-center mb-0 mt-4">تفاصيل السيارة</h3>
+        </div>
+      </section>
+      <!-- CAR HERO SECTION -->
+
+      <!-- VEHICLE NAV -->
+      <section id="vehicle-nav" class="position-fixed">
+        <div class="conatiner-fluid container-xl">
+          <div class="car-info d-flex justify-content-between align-items-center pt-3">
+            <h4> تويوتا RAV4 XLE</h4>
+            <span>37,995﷼</span>
+          </div>
+          <nav class="d-flex align-items-center justify-content-between justify-content-sm-center gap-sm-4 py-3">
+            <a href="#overview" class="active">نظرة عامة</a>
+            <a href="#report">التقرير</a>
+            <a href="#dent-map">خريطة الصدمات</a>
+            <a href="#features">المميزات</a>
+            <a href="#calc-payment">التمويل</a>
+          </nav>
+        </div>
+      </section>
+      <!-- VEHICLE NAV -->
+
+      <!-- OVERVIEW -->
+      <section id="overview">
+        <div class="container-fluid container-xl">
+          <h4 class="mb-5 text-center">نظرة عامة على السيارة</h4>
+          <div class="row">
+            <div class="col-6 col-lg-3">
+              <div class="overview-item d-flex align-items-center gap-3">
+                <img src="../assets/img/icons/vin.svg" alt="vin">
+                <div class="d-flex flex-column">
+                  <span class="title">رقم التخزين</span>
+                  <span class="value">2TP!RFV5MW222585</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-5 mb-lg-0">
+              <div class="overview-item d-flex align-items-center gap-3">
+                <img src="../assets/img/icons/calendar.svg" alt="calendar">
+                <div class="d-flex flex-column">
+                  <span class="title">سنة الإنتاج</span>
+                  <span class="value">Sep 2019</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="overview-item d-flex align-items-center gap-3">
+                <img src="../assets/img/icons/condition.png" alt="condition">
+                <div class="d-flex flex-column">
+                  <span class="title">الحالة</span>
+                  <span class="value">ممتازة</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="overview-item d-flex align-items-center gap-3">
+                <img src="../assets/img/icons/speed-lg.svg" alt="speed">
+                <div class="d-flex flex-column">
+                  <span class="title">المسافة المقطوعه </span>
+                  <span class="value">5971 كلم</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-lg-3 mb-5 mb-lg-0">
+              <div class="overview-item d-flex align-items-center gap-3">
+                <img src="../assets/img/icons/validity.svg" alt="Trim">
+                <div class="d-flex flex-column">
+                  <span class="title">تقليم</span>
+                  <span class="value">يدوي</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="overview-item d-flex align-items-center gap-3">
+                <img src="../assets/img/icons/import.png" alt="import">
+                <div class="d-flex flex-column">
+                  <span class="title">إستيراد</span>
+                  <span class="value">مالك ثاني</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="overview-item d-flex align-items-center gap-3">
+                <img src="../assets/img/icons/car.svg" alt="car">
+                <div class="d-flex flex-column">
+                  <span class="title">اللون الخارجي</span>
+                  <span class="value">أزرق</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="overview-item d-flex align-items-center gap-3">
+                <img src="../assets/img/icons/seat.svg" alt="seat">
+                <div class="d-flex flex-column">
+                  <span class="title">اللون الداخلي</span>
+                  <span class="value">أسود</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-lg-3 mb-5 mb-lg-0">
+              <div class="overview-item d-flex align-items-center gap-3">
+                <img src="../assets/img/icons/engine-size.png" alt="engine-size">
+                <div class="d-flex flex-column">
+                  <span class="title">حجم المحرك</span>
+                  <span class="value">كبير</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-5 mb-lg-0">
+              <div class="overview-item d-flex align-items-center gap-3">
+                <img src="../assets/img/icons/transmission.svg" alt="transmission">
+                <div class="d-flex flex-column">
+                  <span class="title">النقل</span>
+                  <span class="value">يدوي</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="overview-item d-flex align-items-center gap-3">
+                <img src="../assets/img/icons/drive-type.png" alt="drive-type">
+                <div class="d-flex flex-column">
+                  <span class="title">نوع القيادة</span>
+                  <span class="value">DL4C</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="overview-item d-flex align-items-center gap-3">
+                <img src="../assets/img/icons/petrol-lg.svg" alt="petrol">
+                <div class="d-flex flex-column">
+                  <span class="title">نوع الوقود</span>
+                  <span class="value">بنزين</span>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="row" num="last">
+            <div class="col-12">
+              <div class="overview-item d-flex align-items-center gap-3">
+                <img src="../assets/img/icons/location.svg" alt="location">
+                <div class="d-flex flex-column">
+                  <span class="title">العنوان</span>
+                  <span class="value">مكة المكرمة, المملكة العربية السعودية</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- OVERVIEW -->
+
+      <!-- REPORT -->
+      <section id="report">
+        <div class="container-fluid container-xl">
+          <h3 class="mb-5 text-center">تقرير الفحص</h3>
+          <div class="row gap-3 gap-lg-4">
+            <div class="col-12 col-lg-6">
+              <img class="w-100" src="../assets/img/report-img.png" alt="Inspection Report">
+            </div>
+            <div class="col-12 col-lg">
+              <div class="report-content">
+                <p class="mb-4">
+                  نضع كل سيارة في  <b>200 نقطة فحص </b> حتي <b>تكون واثق بنسبة 100% في جودة السيارة</b>
+                <ul>
+                  <li class="d-flex justify-content-between align-items-center mb-4">
+                    <div class="item d-flex align-items-center gap-3">
+                      <img src="../assets/img/icons/car.svg" alt="car">
+                      <span>خارجي</span>
+                    </div>
+                    <i class="bi bi-check-circle-fill error"></i>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center mb-4">
+                    <div class="item d-flex align-items-center gap-3">
+                      <img src="../assets/img/icons/engine.svg" alt="engine">
+                      <span>المحرك</span>
+                    </div>
+                    <i class="bi bi-check-circle-fill error"></i>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center mb-4">
+                    <div class="item d-flex align-items-center gap-3">
+                      <img src="../assets/img/icons/road.svg" alt="road">
+                      <span>إختبار الطريق</span>
+                    </div>
+                    <i class="bi bi-check-circle"></i>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center mb-4">
+                    <div class="item d-flex align-items-center gap-3">
+                      <img src="../assets/img/icons/underbody.svg" alt="underbody">
+                      <span>أسفل السيارة</span>
+                    </div>
+                    <i class="bi bi-check-circle"></i>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="item d-flex align-items-center gap-3">
+                      <img src="../assets/img/icons/tyre.svg" alt="tyre">
+                      <span>الإطارات</span>
+                    </div>
+                    <i class="bi bi-check-circle"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#report-details">
+            <span class="bg">
+              <span class="text">عرض كل التفاصيل</span>
+            </span>
+          </button>
+        </div>
+      </section>
+      <!-- REPORT -->
+      
+            <!-- FULL REPORT MODAL -->
+      <!-- Modal -->
+      <div class="modal fade" id="report-details" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-fullscreen-md-down">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModal">تقرير الفحص</h5>
+              <div class="d-flex align-items-center gap-3">
+                <a href="#" class="download-report">
+                  <i class="bi bi-download"></i> تحميل التقرير
+                </a>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+            </div>
+            <div class="modal-body pt-0">
+              <ul class="modal-body_nav nav nav-tabs d-flex items-center justify-content-start gap-2 pt-3 pb-4" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a data-href="#overview-tab-pane">
+                    <button class="nav-link active" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview-tab-pane" type="button" role="tab" aria-controls="overview-tab-pane" aria-selected="true">
+                    نظرة عامة
+                  </button>
+                  </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a data-href="#exterior-tab-pane">
+                    <button class="nav-link" id="exterior-tab" data-bs-toggle="tab" data-bs-target="#exterior-tab-pane" type="button" role="tab" aria-controls="exterior-tab-pane" aria-selected="true">
+                    خارجي
+                    <span class="issue">4</span>
+                  </button>
+                  </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a data-href="#interior-tab-pane">
+                    <button class="nav-link" id="interior-tab" data-bs-toggle="tab" data-bs-target="#interior-tab-pane" type="button" role="tab" aria-controls="interior-tab-pane" aria-selected="true">
+                    داخلي
+                    <span><i class="bi bi-check"></i></span>
+                  </button>
+                  </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a data-href="#engine-tab-pane">
+                    <button class="nav-link" id="engine-tab" data-bs-toggle="tab" data-bs-target="#engine-tab-pane" type="button" role="tab" aria-controls="engine-tab-pane" aria-selected="true">
+                    المحرك
+                    <span><i class="bi bi-check"></i></span>
+                  </button>
+                  </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a data-href="#road-tab-pane">
+                    <button class="nav-link" id="road-tab" data-bs-toggle="tab" data-bs-target="#road-tab-pane" type="button" role="tab" aria-controls="road-tab-pane" aria-selected="true">
+                    إختبار الطريق
+                    <span><i class="bi bi-check"></i></span>
+                  </button>
+                  </a>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <!-- Overview -->
+                <div class="mb-3" id="overview-tab-pane" role="tabpanel" aria-labelledby="overview-tab" tabindex="0">
+                  <div class="card">
+                    <div class="card-head justify-content-between flex-wrap flex-sm-nowrap mb-4">
+                      <h6>160 نقطة تم فحصها</h6>
+                      <div class="date d-flex items-center justify-content-between flex-grow-1 flex-sm-grow-0 gap-sm-3">
+                        <p class="mb-0">تاريخ الفحص</p>
+                        <span class="fw-bold">25 May 2022</span>
+                      </div>
+                    </div>
+                    <div class="card-body pt-0">
+                      <ul class="card-body_nav mb-4">
+                        <li class="sub-card d-flex items-center flex-grow-1 justify-content-evenly">
+                          <div class="d-flex align-items-center gap-2"><span><i class="bi bi-check"></i></span> 130 تم الإجتياز</div>
+                          <div class="d-flex align-items-center gap-2"><span class="issue"><i class="bi bi-exclamation"></i></span>4  ملاحظات</div>
+                        </li>
+                      </ul>
+                      <div class="overview">
+                        <h6>تفاصيل المركبة كاملة</h6>
+                        <div class="overview_nav-wrapper d-flex align-items-start justify-content-between gap-4">
+                          <ul class="overview_nav active">
+                            <li>
+                              <span class="title">الماركة</span>
+                              <span class="value">هوندا</span>
+                            </li>
+                            <li>
+                              <span class="title">الموديل</span>
+                              <span class="value">Civic</span>
+                            </li>
+                            <li>
+                              <span class="title">اللون</span>
+                              <span class="value">فضى</span>
+                            </li>
+                            <li class="hide">
+                              <span class="title">الحالة</span>
+                              <span class="value">جديدة</span>
+                            </li>
+                            <li class="hide">
+                              <span class="title">سنة الصنع:</span>
+                              <span class="value">2015</span>
+                            </li>
+                            <li class="hide">
+                              <span class="title">ناقل الحركة:</span>
+                              <span class="value">آلي</span>
+                            </li>
+                            <li class="hide">
+                              <span class="title">نوع الوقود:</span>
+                              <span class="value">بنزين</span>
+                            </li>
+                            <li class="hide">
+                              <span class="title">حجم المحرك: </span>
+                              <span class="value">3.6 لتر</span>
+                            </li>
+                            <li class="hide">
+                              <span class="title">عدد الأميال:</span>
+                              <span class="value">74,185 كلم</span>
+                            </li>
+                            <li id="toggle-show" data-hidden="false">
+                              <span class="show">عرض</span>
+                              <span class="hide">إخفاء</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Exterior -->
+                <div class="mb-3" id="exterior-tab-pane" role="tabpanel" aria-labelledby="exterior-tab" tabindex="0">
+                  <div class="card">
+                    <div class="card-head">
+                      <img src="../assets/img/icons/car.svg" alt="car">
+                      <h6>خارجي</h6>
+                    </div>
+                    <div class="card-body">
+                      <ul class="card-body_nav">
+                        <li>
+                          <p>لم يتم إصلاح أي أجزاء من الجسم</p>
+                          <div class="d-flex items-center gap-2">
+                            <span><i class="bi bi-check"></i></span>
+                          </div>
+                        </li>
+                        <li>
+                          <p>لا تآكل في ألواح الهيكل</p>
+                          <div class="d-flex items-center gap-2">
+                            <span><i class="bi bi-check"></i></span>
+                          </div>
+                        </li>
+                        <li>
+                          <p>لم يتم استبدال أي أجزاء من الجسم</p>
+                          <div class="d-flex items-center gap-2">
+                            <span><i class="bi bi-check"></i></span>
+                          </div>
+                        </li>
+                        <li>
+                          <p>لا توجد شقوق في أجزاء الجسم</p>
+                          <div class="d-flex items-center gap-2">
+                            <span><i class="bi bi-check"></i></span>
+                          </div>
+                        </li>
+                        <li>
+                          <p>لا تشققات في الحافات والسبائك</p>
+                          <div class="d-flex items-center gap-2">
+                            <span><i class="bi bi-check"></i></span>
+                          </div>
+                        </li>
+                        <li>
+                          <p>لا يوجد إصلاح في الأعمدة</p>
+                          <div class="d-flex items-center gap-2">
+                            <span><i class="bi bi-check"></i></span>
+                          </div>
+                        </li>
+                        <li>
+                          <p>أضواء إشارة الانعطاف تعمل بشكل جيد</p>
+                          <div class="d-flex items-center gap-2">
+                            <span><i class="bi bi-check"></i></span>
+                          </div>
+                        </li>
+                        <li>
+                          <p>يوجد انبعاج على السطح وباب صندوق الأمتعة</p>
+                          <div class="d-flex items-center gap-2">
+                            <a href="#" data-fancybox-trigger="one">عرض</a>
+                            <span class="issue"><i class="bi bi-dash"></i></span>
+                          </div>
+                          <div class="exterior-defects-gallery" style="display:none">
+                            <a  data-fancybox="one" 
+                                data-caption="There is dent on Roof and Boot/Dicky door" 
+                                href="../assets/img/defects/front/1.webp">
+                              <img class="rounded" src="../assets/img/defects/front/1.webp" />
+                            </a>
+                          </div>
+                        </li>
+                        <li>
+                          <p>يوجد خدش على غطاء المحرك ، الحاجز الأيمن الأمامي ، لوحة الربع الأيسر وباب صندوق الأمتعة</p>
+                          <div class="d-flex items-center gap-2">
+                            <a href="#" data-fancybox-trigger="two">عرض</a>
+                            <span class="issue"><i class="bi bi-dash"></i></span>
+                          </div>
+                          <div class="exterior-defects-gallery" style="display:none">
+                            <a  data-fancybox="two" 
+                                data-caption="There is scratch on Bonnet,Front Right Fender,Left Quarter panel and Boot/Dicky door" 
+                                href="../assets/img/defects/back/1.webp">
+                              
+                              <img class="rounded" src="../assets/img/defects/back/1.webp" />
+                            </a>
+                          </div>
+                        </li>
+                        <li>
+                          <p>المصباح الأيسر قد تلاشى</p>
+                          <div class="d-flex items-center gap-2">
+                            <a href="#" data-fancybox-trigger="three">عرض</a>
+                            <span class="issue"><i class="bi bi-dash"></i></span>
+                          </div>
+                          <div class="exterior-defects-gallery" style="display:none">
+                            <a  data-fancybox="three" 
+                                data-caption="Left headlight has faded" 
+                                href="../assets/img/defects/top-back/1.webp">
+                              <img class="rounded" src="../assets/img/defects/top-back/1.webp" />
+                            </a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- Interior -->
+                <div class="mb-3" id="interior-tab-pane" role="tabpanel" aria-labelledby="interior-tab" tabindex="0">
+                  <div class="card">
+                    <div class="card-head">
+                      <img src="../assets/img/icons/seat.svg" alt="seat">
+                      <h6>داخلي</h6>
+                    </div>
+                    <div class="card-body">
+                      <ul class="card-body_nav">
+                        <li>
+                          <p>التنجيد في حالة جيدة</p>
+                          <div class="d-flex items-center gap-2">
+                            <span><i class="bi bi-check"></i></span>
+                          </div>
+                        </li>
+                        <li>
+                          <p>بطانة السقف في حالة جيدة</p>
+                          <div class="d-flex items-center gap-2">
+                            <span><i class="bi bi-check"></i></span>
+                          </div>
+                        </li>
+                        <li>
+                          <p>السجاد والأرضيات خالية من القطع</p>
+                          <div class="d-flex items-center gap-2">
+                            <span><i class="bi bi-check"></i></span>
+                          </div>
+                        </li>
+                        <li>
+                          <p>جميع الوظائف في لوحة الكتلة تعمل بشكل جيد</p>
+                          <div class="d-flex items-center gap-2">
+                            <span><i class="bi bi-check"></i></span>
+                          </div>
+                        </li>
+                        <li>
+                          <p>يعمل منفاخ التيار المتردد بشكل جيد</p>
+                          <div class="d-flex items-center gap-2">
+                            <span><i class="bi bi-check"></i></span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- Engine -->
+                <div class="mb-3" id="engine-tab-pane" role="tabpanel" aria-labelledby="engine-tab" tabindex="0">
+                  <div class="card">
+                    <div class="card-head">
+                      <img src="../assets/img/icons/engine.svg" alt="engine">
+                      <h6>المحرك</h6>
+                    </div>
+                    <div class="card-body">
+                      <ul class="card-body_nav">
+                        <li>
+                          <p>السيارة ليس بها دخان أبيض أو أسود</p>
+                          <div class="d-flex items-center gap-2">
+                            <span><i class="bi bi-check"></i></span>
+                          </div>
+                        </li>
+                        <li>
+                          <p>المحرك ليس له ضوضاء غير طبيعية</p>
+                          <div class="d-flex items-center gap-2">
+                            <span><i class="bi bi-check"></i></span>
+                          </div>
+                        </li>
+                        <li>
+                          <p>المحرك ليس لديه ضغط خلفي</p>
+                          <div class="d-flex items-center gap-2">
+                            <span><i class="bi bi-check"></i></span>
+                          </div>
+                        </li>
+                        <li>
+                          <p>المبرد في حالة جيدة</p>
+                          <div class="d-flex items-center gap-2">
+                            <span><i class="bi bi-check"></i></span>
+                          </div>
+                        </li>
+                        <li>
+                          <p>المبرد خالي من المواد الغريبة</p>
+                          <div class="d-flex items-center gap-2">
+                            <span><i class="bi bi-check"></i></span>
+                          </div>
+                        </li>
+                        <li>
+                          <p>نظام الإشعال يعمل بشكل جيد</p>
+                          <div class="d-flex items-center gap-2">
+                            <span><i class="bi bi-check"></i></span>
+                          </div>
+                        </li>
+                        <li>
+                          <p>بدء تشغيل المحرك في كرنك واحد</p>
+                          <div class="d-flex items-center gap-2">
+                            <span><i class="bi bi-check"></i></span>
+                          </div>
+                        </li>
+                        <li>
+                          <p>البطارية في حالة جيدة</p>
+                          <div class="d-flex items-center gap-2">
+                            <span><i class="bi bi-check"></i></span>
+                          </div>
+                        </li>
+                        <li>
+                          <p>نظام التوجيه يعمل بشكل صحيح</p>
+                          <div class="d-flex items-center gap-2">
+                            <span><i class="bi bi-check"></i></span>
+                          </div>
+                        </li>
+                        <li>
+                          <p>حزام المولد يعمل بسلاسة</p>
+                          <div class="d-flex items-center gap-2">
+                            <span><i class="bi bi-check"></i></span>
+                          </div>
+                        </li>
+                        <li>
+                          <p>الممسحة تعمل بسلاسة</p>
+                          <div class="d-flex items-center gap-2">
+                            <span><i class="bi bi-check"></i></span>
+                          </div>
+                        </li>
+                        <li>
+                          <p>يعمل ضاغط مكيف الهواء بسلاسة</p>
+                          <div class="d-flex items-center gap-2">
+                            <span><i class="bi bi-check"></i></span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- Road Test -->
+                <div class="" id="road-tab-pane" role="tabpanel" aria-labelledby="road-tab" tabindex="0">
+                  <div class="card">
+                    <div class="card-head">
+                      <img src="../assets/img/icons/road.svg" alt="engine">
+                      <h6>إختبار الطريق</h6>
+                    </div>
+                    <div class="card-body">
+                      <ul class="card-body_nav">
+                        <li>
+                          <p>يتم محاذاة التوجيه بشكل مثالي</p>
+                          <div class="d-flex items-center gap-2">
+                            <span><i class="bi bi-check"></i></span>
+                          </div>
+                        </li>
+                        <li>
+                          <p>يعمل التوجيه المعزز حسب التصميم</p>
+                          <div class="d-flex items-center gap-2">
+                            <span><i class="bi bi-check"></i></span>
+                          </div>
+                        </li>
+                        <li>
+                          <p>يعرض المحرك القوة المناسبة</p>
+                          <div class="d-flex items-center gap-2">
+                            <span><i class="bi bi-check"></i></span>
+                          </div>
+                        </li>
+                        <li>
+                          <p>يعمل ناقل الحركة بسلاسة</p>
+                          <div class="d-flex items-center gap-2">
+                            <span><i class="bi bi-check"></i></span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FULL REPORT MODAL -->
+      
+      <!-- DENT MAP -->
+      <section id="dent-map">
+        <div class="container-fluid container-xl">
+          <h3 class="mb-4 text-center">خريطة الصدمات</h3>
+          <p class="mb-5 text-center">خدوش وصدمات طفيفة على السطح الخارجي للسيارة</p>
+          <div class="row align-items-center justify-content-center">
+            <div class="col-12 col-lg-8">
+              <div class="map">
+                <img class="w-100" src="../assets/img/dent-map.svg" alt="Dent Map" usemap="#dentMap">
+                <map name="dentMap">
+                  <area shape="circle" coords="40,325,30" data-value="1" data-num="one" data-fancybox-trigger="front">
+                  <area shape="circle" coords="808,325,30" data-value="2" data-num="two" data-fancybox-trigger="back">
+                  <area shape="circle" coords="225,325,30" data-value="3" data-num="three" data-fancybox-trigger="top-front">
+                  <area shape="circle" coords="655,325,30" data-value="4" data-num="four" data-fancybox-trigger="top-back">
+                </map>
+                <!-- <span class="defect" num="one"    data-fancybox-trigger="front">1</span> -->
+                <!-- <span class="defect" num="two"    data-fancybox-trigger="back">2</span> -->
+                <!-- <span class="defect" num="three"  data-fancybox-trigger="top-front">3</span> -->
+                <!-- <span class="defect" num="four"   data-fancybox-trigger="top-back">4</span> -->
+              </div>
+              
+              <div class="defects-gallery" style="display:none">
+                <a data-fancybox="front" href="../assets/img/defects/front/1.webp">
+                  <img class="rounded" src="../assets/img/defects/front/1.webp" />
+                </a>
+              </div>
+              <div class="defects-gallery" style="display:none">
+                <a data-fancybox="back" href="../assets/img/defects/back/1.webp">
+                  <img class="rounded" src="../assets/img/defects/back/1.webp" />
+                </a>
+              </div>
+              <div class="defects-gallery" style="display:none">
+                <a data-fancybox="top-front" href="../assets/img/defects/top-front/1.webp">
+                  <img class="rounded" src="../assets/img/defects/top-front/1.webp" />
+                </a>
+                <a data-fancybox="top-front" href="../assets/img/defects/top-front/2.webp">
+                  <img class="rounded" src="../assets/img/defects/top-front/2.webp" />
+                </a>
+                <a data-fancybox="top-front" href="../assets/img/defects/top-front/3.webp">
+                  <img class="rounded" src="../assets/img/defects/top-front/3.webp" />
+                </a>
+              </div>
+              <div class="defects-gallery" style="display:none">
+                <a data-fancybox="top-back" href="../assets/img/defects/top-back/1.webp">
+                  <img class="rounded" src="../assets/img/defects/top-front/1.webp" />
+                </a>
+                <a data-fancybox="top-back" href="../assets/img/defects/top-front/3.webp">
+                  <img class="rounded" src="../assets/img/defects/top-front/3.webp" />
+                </a>
+              </div>
+            </div>
+        </div>
+      </section>
+      <!-- DENT MAP -->
+
+      <!-- FEATURES -->
+      <section id="features">
+        <div class="container-fluid container-xl">
+          <h3 class="mb-5 text-center">المميزات</h3>
+          <div class="row">
+            <div class="col-6 col-lg-3">
+              <h5 class="mb-4">الأمان</h5>
+              <ul class="mb-5 mb-lg-0">
+                <li>نظام تثبيت السرعة </li>
+                <li>كاميرا احتياطية</li>
+                <li>نظام مراقبة النقطة العمياء</li>
+                <li>مساعدة الفرامل</li>
+                <li>اقفال امان للاطفال</li>
+                <li>تنبيه عن حركة المرور</li>
+                <li>مثبت السرعة</li>
+                <li>وسادة هوائية للسائق</li>
+                <li>مانع تشغيل المحرك</li>
+                <li>وسادة هوائية أمامية للرأس</li>
+                <li>وسادة هوائية جانبية أمامية</li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-3">
+              <h5 class="mb-4">الراحة</h5>
+              <ul class="mb-5 mb-lg-0">
+                <li>A/C</li>
+                <li>عجلة قيادة قابلة للتعديل</li>
+                <li>مقاعد دلو</li>
+                <li>التحكم في المناخ</li>
+                <li>Driver Adjustable Lumbar</li>
+                <li>مرايا حرارية</li>
+                <li>مقاعد مدفأة</li>
+                <li>عجلة قيادة حرارية</li>
+                <li>دخول بدون مفتاح</li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-3">
+              <h5 class="mb-4">المميزات الميكانيكية</h5>
+              <ul>
+                <li>محرك 4 سلندر</li>
+                <li>فرامل قرصية على 4 عجلات</li>
+                <li>8 سرعات</li>
+                <li>ABS</li>
+                <li>دفع الفرامل التفاضلية المحدودة الانزلاق</li>
+                <li>نظام دفع بالعجلات الأمامية</li>
+                <li>وقود البنزين</li>
+                <li>عجلة قيادة مرنة</li>
+                <li>تقنيات المعلومات</li>
+                <li>الإطارات - الأداء الأمامي</li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-3">
+              <h5 class="mb-4">الأمان</h5>
+              <ul>
+                <li>عجلات ألمنيوم</li>
+                <li>مصابيح أمامية تلقائية</li>
+                <li>مصابيح نهارية</li>
+                <li>مصابيح ضباب</li>
+                <li>مرايا إشارة انعطاف </li>
+                <li>مساحات متقطعة</li>
+                <li>باب خلفي كهربائي</li>
+                <li>زجاج الخصوصية</li>
+                <li>مساحات استشعار المطر</li>
+                <li>تذويب خلفي</li>
+              </ul>
+            </div>
+          </div>
+          <button class="btn btn-secondary d-flex mx-auto">
+            <span class="bg">
+              <span class="text">عرض كل التفاصيل</span>
+            </span>
+          </button>
+        </div>
+      </section>
+      <!-- FEATURES -->
+
+      <!-- CALC YOUR PAYMENT -->
+      <section id="calc-payment">
+        <div class="container-fluid container-xl">
+          <h3 class="mb-5 text-center">طرق أسهل للدفع</h3>
+          <ul class="nav nav-tabs gap-0" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="finance-tab" data-bs-toggle="tab" data-bs-target="#finance-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">التمويل</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="cash-tab" data-bs-toggle="tab" data-bs-target="#cash-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">الدفع كاش</button>
+              </li>
+            </ul>
+          <div class="row">
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="finance-tab-pane" role="tabpanel" aria-labelledby="finance-tab" tabindex="0">
+                <ul class="providers">
+                  <li class="active" data-monthly="724" data-cash="5000">
+                    <img src="../assets/img/icons/al-rajhi-bank.svg" alt="">
+                  </li>
+                  <li data-monthly="524" data-cash="4000">
+                    <img src="../assets/img/icons/SNB.svg" alt="">
+                  </li>
+                  <li data-monthly="424" data-cash="3000">
+                    <img src="../assets/img/icons/al-rajhi-bank.svg" alt="">
+                  </li>
+                </ul>
+                <h4 class="mb-3">احسب دفعتك</h4>
+                <div class="card">
+                  <div class="btn-group mb-4 ">
+                    <div class="btn btn-primary justify-content-center justify-content-sm-between">
+                      <img class="loading-spinner d-none" width="30" height="30" src="../assets/img/icons/Spinner.gif" alt="loading">
+                      <span><span data-value="monthly-value">724</span>﷼ <br class="d-sm-none"> <sub>شهريا</sub></span>
+                      <i tabindex="0" role="button" class="bi bi-question-circle d-none d-sm-block" 
+                        data-bs-toggle="popover" 
+                        data-bs-placement="top"
+                        data-bs-trigger="focus"
+                        data-bs-custom-class="custom-popover"
+                        title="شهريا"
+                        data-bs-content="Your loan’s monthly payment is determined by the total amount you plan to borrow, the length of your loan and your credit score. Paying more up front, adding a trade-in credit or choosing a longer loan can help lower your monthly payment.">
+                      </i>
+                    </div>
+                    <div class="btn btn-primary justify-content-center justify-content-sm-between">
+                      <img class="loading-spinner d-none" width="30" height="30" src="../assets/img/icons/Spinner.gif" alt="loading">
+                      <span><span id="cash-value">5000</span>﷼ <br class="d-sm-none"> <sub>دفعة أولي</sub></span>
+                      <i tabindex="0" role="button" class="bi bi-question-circle d-none d-sm-block" 
+                        data-bs-toggle="popover" 
+                        data-bs-placement="top"
+                        data-bs-trigger="focus"
+                        data-bs-custom-class="custom-popover"
+                        title="دفعة أولي"
+                        data-bs-content="Your down payment is a one-time cash payment you make towards your new vehicle at the time of purchase (not including a trade-in value).">
+                      </i>
+                    </div>
+                  </div>
+                  <form id="payment">
+                    <div class="d-flex justify-content-between flex-wrap align-items-center gap-3 gap-md-5">
+                      <div class="d-flex flex-column gap-2 mb-4 flex-grow-1">
+                        <label for="down-payment" class="form-label">الدفعة الأولي</label>
+                        <div class="input-group">
+                          <span class="input-group-text" id="basic-addon1">﷼</span>
+                          <input type="number" class="form-control" id="down-payment" value="">
+                        </div>
+                        <input class="single-range-input" data-slider-id='down-payment' type="text" data-slider-min="0" data-slider-max="10000" data-slider-step="100" data-slider-value="5000"/>
+                      </div>
+                      <div class="bottom d-flex flex-column align-items-start flex-grow-1">
+                        <p class="mb-2"><b>مدة سداد التمويل (بالأشهر)  </b> ختر المدة التي تريد أن يستغرقها السداد</p>
+                        <div class="input-group months d-flex items justify-content-between">
+                          <label for="12">
+                          <input type="radio" name="month" id="12" class="d-none">
+                          <span>12</span>
+                        </label>
+                        <label for="24">
+                          <input type="radio" name="month" id="24" class="d-none" checked>
+                          <span>24</span>
+                        </label>
+                        <label for="36">
+                          <input type="radio" name="month" id="36" class="d-none">
+                          <span>36</span>
+                        </label>
+                        <label for="48">
+                          <input type="radio" name="month" id="48" class="d-none">
+                          <span>48</span>
+                        </label>
+                        <label for="60">
+                          <input type="radio" name="month" id="60" class="d-none">
+                          <span>60</span>
+                        </label>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </form>
+                  
+                </div>
+                <div class="calc-result d-flex  align-items-center justify-content-between mt-4 px-3">
+                  <p class="mb-0 p-0">التمويل بـ <span data-value="monthly-value">724﷼</span><sub>/شهريا</sub> </p>
+                  <button class="btn btn-primary">إشتري الآن</button>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="cash-tab-pane" role="tabpanel" aria-labelledby="cash-tab" tabindex="0">
+                <h4 class="my-3">إدفع كاش</h4>
+                <div class="card">
+                  <div class="btn-group ">
+                    <div class="btn btn-primary justify-content-center justify-content-sm-between">
+                      <span><span id="cash-value">5000</span>﷼ <sub> </sub></span>
+                      <i tabindex="0" role="button" class="bi bi-question-circle d-none d-sm-block" 
+                        data-bs-toggle="popover" 
+                        data-bs-placement="top"
+                        data-bs-trigger="focus"
+                        data-bs-custom-class="custom-popover"
+                        title="الدفعة الأولي"
+                        data-bs-content="Your down payment is a one-time cash payment you make towards your new vehicle at the time of purchase (not including a trade-in value).">
+                      </i>
+                    </div>
+                  </div>
+                  <p class="mb-0">ستتمكن من إضافة خطط الرعاية والحماية وقيمة الاستبدال عند الدفع ، والاطلاع على السعر النهائي.</p>
+                </div>
+                <div class="calc-result d-flex  align-items-center justify-content-between mt-4 px-3">
+                  <p class="mb-0 p-0">إشتري بـ  <span data-value="cash-value">37,995</span><span>﷼</span></p>
+                  <button class="btn btn-primary">إشتري الآن</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CALC YOUR PAYMENT -->
+
+      <!-- START FOOTER -->
+      <footer>
+        <div class="container">
+          <div class="footer-top">
+            <div class="row gap-xl-5">
+              <div class="col-12 col-xl-2 mb-5 mb-xl-0">
+                <div class="footer-logo text-center">
+                  <img src="../assets/img/logo-pattern.png" alt="LOGO">
+                </div>
+              </div>
+              <div class="col-12 col-lg">
+                <div class="footer-nav d-flex flex-column flex-lg-row justify-content-between align-items-start px-5 px-lg-0">
+                  <ul class="location mb-3 mb-lg-0">
+                    <li>
+                      <a href="#" class="d-flex gap-3">
+                        <i class="bi bi-geo-alt"></i>
+                        <span>12039 Smith Avenue <br> Santa Fe Springs, CA 90670</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="contact">
+                    <li class="mb-3">
+                      <a href="#" class="d-flex gap-3">
+                        <i class="bi bi-telephone"></i>
+                        <span>Toll-free 0877 338 0999 </span>
+                      </a>
+                    </li>
+                    <li class="mb-3">
+                      <a href="#" class="d-flex gap-3">
+                        <i class="bi bi-telephone"></i>
+                        <span>Fax 562 236 9429</span>
+                      </a>
+                    </li>
+                    <li class="mb-5 mb-lg-0">
+                      <a href="#" class="d-flex gap-3">
+                        <i class="bi bi-envelope"></i>
+                        <span>Info@motorscity.com</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="sign-up text-center text-md-end">
+                    <h6 class="mb-4">انضم إلى نادي البريد الإلكتروني </h6>
+                    <form>
+                      <input required pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" type="email" name="signup" id="signup" placeholder="بريدك الإلكتروني" class="form-control mb-4">
+                      <button class="btn btn-secondary">
+                        <span class="bg">
+                          <span class="text">تسجيل دخول</span>
+                        </span>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright d-flex flex-column flex-lg-row align-items-center justify-content-between">
+            <p class="mb-0 order-2 mt-4 order-lg-0 mt-lg-0"> © 2022 حقوق الطبع والنشر. كل الحقوق محفوظة.</p>
+            <ul class="social-icons d-flex align-items-center gap-4">
+              <li>
+                <a href="#">
+                  <i class="bi bi-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <!-- END FOOTER -->
+    </div>
+
+    <script>
+      var thumbSwiper = new Swiper(".thumbs-swiper", {
+        loop: false,
+        spaceBetween: 10,
+        slidesPerView: 2,
+        breakpoints: {
+          576: {
+            slidesPerView: 3,
+            spaceBetween: 10
+          },
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 10
+          },
+          1400: {
+            slidesPerView: 4,
+            spaceBetween: 10
+          }
+        }
+      });
+
+      var carSwiper = new Swiper(".mySwiper", {
+        loop: false,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: thumbSwiper,
+        },
+      });
+      // Slider #1
+      var dentMap = new Swiper('.dentMap', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: false,
+        spaceBetween: 10,
+
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+      });
+    </script>
+    <!-- Bootstrap-5 Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- Jquery 3.6 min -->
+    <script src="../assets/plugins/js/jquery-3.6-min.js"></script>
+    <!-- Bootstrap Input Slider -->
+    <script src="../assets/plugins/bootstrap-slider/bootstrap-slider-min.js"></script>
+    <!-- fancybox -->
+    <script src="../assets/plugins/fancybox/js/fancybox.js"></script>
+    <!-- Custom Js -->
+    <script src="../assets/js/main.js"></script>
+
+  </body>
+</html>
